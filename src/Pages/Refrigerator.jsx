@@ -27,7 +27,7 @@
 //   const fetchProducts = async () => {
 //     try {
 //       const response = await axios.get(
-//         "http://localhost:5000/api/refrigerators"
+//         "https://yashbackend.onrender.com/api/refrigerators"
 //       );
 //       setProducts(response.data);
 //     } catch (error) {
@@ -71,12 +71,12 @@
 //       if (editProductId) {
 //         // Edit Product
 //         await axios.put(
-//           `http://localhost:5000/api/refrigerators/${editProductId}`,
+//           `https://yashbackend.onrender.com/api/refrigerators/${editProductId}`,
 //           newProduct
 //         );
 //       } else {
 //         // Add New Product
-//         await axios.post("http://localhost:5000/api/refrigerators", newProduct);
+//         await axios.post("https://yashbackend.onrender.com/api/refrigerators", newProduct);
 //       }
 //       setNewProduct({
 //         productName: "",
@@ -103,7 +103,7 @@
 
 //   const handleDeleteProduct = async (id) => {
 //     try {
-//       await axios.delete(`http://localhost:5000/api/refrigerators/${id}`);
+//       await axios.delete(`https://yashbackend.onrender.com/api/refrigerators/${id}`);
 //       fetchProducts();
 //     } catch (error) {
 //       console.error("Error deleting product:", error);
@@ -369,7 +369,7 @@ const Refrigerator = () => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/refrigerators"
+        "https://yashbackend.onrender.com/api/refrigerators"
       );
       setProducts(response.data);
     } catch (error) {
@@ -414,12 +414,12 @@ const Refrigerator = () => {
       if (editProductId) {
         // Edit Product
         await axios.put(
-          `http://localhost:5000/api/refrigerators/${editProductId}`,
+          `https://yashbackend.onrender.com/api/refrigerators/${editProductId}`,
           newProduct
         );
       } else {
         // Add New Product
-        await axios.post("http://localhost:5000/api/refrigerators", newProduct);
+        await axios.post("https://yashbackend.onrender.com/api/refrigerators", newProduct);
       }
       setNewProduct({
         productName: "",
@@ -446,7 +446,7 @@ const Refrigerator = () => {
 
   const handleDeleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/refrigerators/${id}`);
+      await axios.delete(`https://yashbackend.onrender.com/api/refrigerators/${id}`);
       fetchProducts();
     } catch (error) {
       console.error("Error deleting product:", error);
