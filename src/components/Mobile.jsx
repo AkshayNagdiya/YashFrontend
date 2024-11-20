@@ -26,7 +26,7 @@
 
 // // // //   const fetchProducts = async () => {
 // // // //     try {
-// // // //       const response = await axios.get("http://localhost:5000/api/products");
+// // // //       const response = await axios.get("https://yashbackend.onrender.com/api/products");
 // // // //       setProducts(response.data);
 // // // //     } catch (error) {
 // // // //       console.error("Error fetching products:", error);
@@ -49,7 +49,7 @@
 // // // //   // Function to handle submitting the entire product
 // // // //   const handleAddProduct = async () => {
 // // // //     try {
-// // // //       const response = await axios.post("http://localhost:5000/api/products", newProduct);
+// // // //       const response = await axios.post("https://yashbackend.onrender.com/api/products", newProduct);
 // // // //       setProducts([...products, response.data]);
 // // // //       setNewProduct({
 // // // //         productName: "",
@@ -70,7 +70,7 @@
 
 // // // //   const handleRemoveProduct = async (id) => {
 // // // //     try {
-// // // //       await axios.delete(`http://localhost:5000/api/products/${id}`);
+// // // //       await axios.delete(`https://yashbackend.onrender.com/api/products/${id}`);
 // // // //       setProducts(products.filter((product) => product._id !== id));
 // // // //     } catch (error) {
 // // // //       console.error("Error deleting product:", error);
@@ -285,7 +285,7 @@
 
 // // //   const fetchProducts = async () => {
 // // //     try {
-// // //       const response = await axios.get("http://localhost:5000/api/products?category=Mobile");
+// // //       const response = await axios.get("https://yashbackend.onrender.com/api/products?category=Mobile");
 // // //       setProducts(response.data);
 // // //     } catch (error) {
 // // //       console.error("Error fetching products:", error);
@@ -306,7 +306,7 @@
 
 // // //   const handleAddProduct = async () => {
 // // //     try {
-// // //       const response = await axios.post("http://localhost:5000/api/products", newProduct);
+// // //       const response = await axios.post("https://yashbackend.onrender.com/api/products", newProduct);
 // // //       setProducts([...products, response.data]);
 // // //       setNewProduct({
 // // //         productName: "",
@@ -329,7 +329,7 @@
 // // //   const handleRemoveProduct = async () => {
 // // //     if (productToDelete) {
 // // //       try {
-// // //         await axios.delete(`http://localhost:5000/api/products/${productToDelete._id}`);
+// // //         await axios.delete(`https://yashbackend.onrender.com/api/products/${productToDelete._id}`);
 // // //         setProducts(products.filter((product) => product._id !== productToDelete._id));
 // // //         setShowDeleteConfirmationModal(false);
 // // //         alert("Product removed successfully!");
@@ -588,7 +588,7 @@
 
 // //   const fetchProducts = async () => {
 // //     try {
-// //       const response = await axios.get("http://localhost:5000/api/products?category=Mobile");
+// //       const response = await axios.get("https://yashbackend.onrender.com/api/products?category=Mobile");
 // //       setProducts(response.data);
 // //     } catch (error) {
 // //       console.error("Error fetching products:", error);
@@ -609,7 +609,7 @@
 
 // //   const handleAddProduct = async () => {
 // //     try {
-// //       const response = await axios.post("http://localhost:5000/api/products", newProduct);
+// //       const response = await axios.post("https://yashbackend.onrender.com/api/products", newProduct);
 // //       setProducts([...products, response.data]);
 // //       setNewProduct({
 // //         productName: "",
@@ -632,7 +632,7 @@
 // //   const handleEditProduct = async () => {
 // //     try {
 // //       const response = await axios.put(
-// //         `http://localhost:5000/api/products/${productToEdit._id}`,
+// //         `https://yashbackend.onrender.com/api/products/${productToEdit._id}`,
 // //         productToEdit
 // //       );
 // //       const updatedProducts = products.map((product) =>
@@ -650,7 +650,7 @@
 // //   const handleRemoveProduct = async () => {
 // //     if (productToDelete) {
 // //       try {
-// //         await axios.delete(`http://localhost:5000/api/products/${productToDelete._id}`);
+// //         await axios.delete(`https://yashbackend.onrender.com/api/products/${productToDelete._id}`);
 // //         setProducts(products.filter((product) => product._id !== productToDelete._id));
 // //         setShowDeleteConfirmationModal(false);
 // //         alert("Product removed successfully!");
@@ -1003,7 +1003,7 @@
 
 //   const fetchProducts = async () => {
 //     try {
-//       const response = await axios.get("http://localhost:5000/api/products?category=Mobile");
+//       const response = await axios.get("https://yashbackend.onrender.com/api/products?category=Mobile");
 //       setProducts(response.data);
 //     } catch (error) {
 //       console.error("Error fetching products:", error);
@@ -1024,7 +1024,7 @@
 
 //   const handleAddProduct = async () => {
 //     try {
-//       const response = await axios.post("http://localhost:5000/api/products", newProduct);
+//       const response = await axios.post("https://yashbackend.onrender.com/api/products", newProduct);
 //       setProducts([...products, response.data]);
 //       setNewProduct({
 //         productName: "",
@@ -1047,7 +1047,7 @@
 //   const handleEditProduct = async () => {
 //     try {
 //       const response = await axios.put(
-//         `http://localhost:5000/api/products/${productToEdit._id}`,
+//         `https://yashbackend.onrender.com/api/products/${productToEdit._id}`,
 //         productToEdit
 //       );
 //       const updatedProducts = products.map((product) =>
@@ -1065,7 +1065,7 @@
 //   const handleRemoveProduct = async () => {
 //     if (productToDelete) {
 //       try {
-//         await axios.delete(`http://localhost:5000/api/products/${productToDelete._id}`);
+//         await axios.delete(`https://yashbackend.onrender.com/api/products/${productToDelete._id}`);
 //         setProducts(products.filter((product) => product._id !== productToDelete._id));
 //         setShowDeleteConfirmationModal(false);
 //         alert("Product removed successfully!");
@@ -1419,7 +1419,7 @@ const Mobile = () => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/products"
+        "https://yashbackend.onrender.com/api/products"
       );
       setProducts(response.data);
     } catch (error) {
@@ -1448,7 +1448,7 @@ const Mobile = () => {
   const handleAddProduct = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/products",
+        "https://yashbackend.onrender.com/api/products",
         newProduct
       );
       setProducts([...products, response.data]);
@@ -1470,7 +1470,7 @@ const Mobile = () => {
   const handleEditProduct = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/products/${productToEdit._id}`,
+        `https://yashbackend.onrender.com/api/products/${productToEdit._id}`,
         productToEdit
       );
       const updatedProducts = products.map((product) =>
@@ -1489,7 +1489,7 @@ const Mobile = () => {
     if (productToDelete) {
       try {
         await axios.delete(
-          `http://localhost:5000/api/products/${productToDelete._id}`
+          `https://yashbackend.onrender.com/api/products/${productToDelete._id}`
         );
         setProducts(
           products.filter((product) => product._id !== productToDelete._id)
