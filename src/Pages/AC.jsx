@@ -26,7 +26,7 @@ const AC = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/acs");
+      const response = await axios.get("https://yashbackend.onrender.com/api/acs");
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -69,12 +69,12 @@ const AC = () => {
       if (editProductId) {
         // Edit Product
         await axios.put(
-          `http://localhost:5000/api/acs/${editProductId}`,
+          `https://yashbackend.onrender.com/api/acs/${editProductId}`,
           newProduct
         );
       } else {
         // Add New Product
-        await axios.post("http://localhost:5000/api/acs", newProduct);
+        await axios.post("https://yashbackend.onrender.com/api/acs", newProduct);
       }
       setNewProduct({
         productName: "",
@@ -101,7 +101,7 @@ const AC = () => {
 
   const handleDeleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/acs/${id}`);
+      await axios.delete(`https://yashbackend.onrender.com/api/acs/${id}`);
       fetchProducts();
     } catch (error) {
       console.error("Error deleting product:", error);
