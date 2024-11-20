@@ -26,7 +26,7 @@ const TV = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/tvs");
+      const response = await axios.get("https://yashbackend.onrender.com/api/tvs");
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -69,12 +69,12 @@ const TV = () => {
       if (editProductId) {
         // Edit Product
         await axios.put(
-          `http://localhost:5000/api/tvs/${editProductId}`,
+          `https://yashbackend.onrender.com/api/tvs/${editProductId}`,
           newProduct
         );
       } else {
         // Add New Product
-        await axios.post("http://localhost:5000/api/tvs", newProduct);
+        await axios.post("https://yashbackend.onrender.com/api/tvs", newProduct);
       }
       setNewProduct({
         productName: "",
@@ -101,7 +101,7 @@ const TV = () => {
 
   const handleDeleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tvs/${id}`);
+      await axios.delete(`https://yashbackend.onrender.com/api/tvs/${id}`);
       fetchProducts();
     } catch (error) {
       console.error("Error deleting product:", error);
